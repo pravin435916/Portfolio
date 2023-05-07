@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact me</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            height: 100%;
+            width: auto;
+            background-color: black;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            height: 250px;
+            flex-wrap: wrap;
+            color: white;
+        }
+        .container h3,h1{
+            /* display: flex; */
+            width: 100%;
+            justify-content: center;
+            text-align: center;
+        }
+        .container h1{
+            font-size: 3rem;
+            text-decoration: overline;
+            padding-top: 15px;
+        }
+        .boxes{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+        @media screen and (max-width:480px) {
+            .boxes{
+                display: flex;
+                flex-direction: column;
+            }
+            .contact{
+                margin-left: 20px;
+            }
+            #name,#email{
+                width: 100%;
+            }
+            .head{
+                text-align: center;
+            }
+            .form{
+                margin-left: 20px;
+            }
+        }
+        .form{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            padding: 10px 5px;
+            flex-wrap: wrap;
+        }
+        input{
+            padding: 15px;
+            background: transparent;                                                                                                                     
+            margin: 10px 20px;
+            border: none;
+            background-color: rgb(52, 52, 52);
+            outline: none;
+            color: white;
+            font-size: 1..3rem;
+        }
+        input::placeholder{
+            color: white;
+        }
+        #name,#email {
+            min-width: 42%;
+        }
+        #sub{
+            min-width: 90%;
+        }
+        #msg{
+            width: 90%;
+            margin-left: 18px;
+            margin-top: 10px;
+            background-color: rgb(52, 52, 52);
+            outline: none;
+            color: #fff;
+        }
+        #msg::placeholder{
+            color: white;
+        }
+        #btn{
+            padding: 12px 20px;
+            background-color: #fd4766;
+            border: #fd4766;
+            border-radius: 14px;
+            color: black;
+            font-weight: bold;
+        }
+        #btn:hover{
+            background: transparent;
+
+            color: white;
+            cursor: pointer;
+            border:1px solid #fd4766;
+        }
+        .contact{
+            width: 30%;
+            color: white;
+        }
+        .name{
+            padding: 5px;
+            margin: 5px;
+        }
+        .name h2,p{
+            position: relative;
+            left: 40px;
+            top: -33px;
+        }
+        .name i{
+            font-size: 1.8rem;
+            color: #fd4766;
+       
+        }
+        .head{
+            position: relative;
+            left: 10px;
+            font-size: 1.5rem;
+        }
+        #hd{
+            color: white;
+            font-size: 2rem;
+            position: relative;
+            left: 15px;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Feel  Free to Contact Me Anytime </h3>
+        <h1>Get in Touch</h1>
+        </div>
+        <div class="boxes">
+        <div class="form">
+        <form action="action.jsp">
+            <h2 id="hd">Message me</h2>
+            <input type="text" placeholder="name" id="name" required> 
+            <input type="email" name="email" id="email" placeholder="Email" required> <br>
+            <input type="text" placeholder="Subject" id="sub" required>
+            <textarea name="msg" id="msg" cols="60" rows="10" placeholder="Message" required></textarea> <br>
+            <input type="submit" onclick="return openform()" value="Send Message" id="btn">
+        </form>
+        </div>
+        <div class="contact">
+            <div class="head">
+            <h2>contact info</h2>
+        </div>
+            <div class="name">
+                <i class="fa-sharp fa-solid fa-circle-user"></i> 
+                    <h2>Name</h2>
+                    <p>Pravin Nandankar</p>
+            </div>
+            <div class="name">
+                <i class="fa-solid fa-location-dot"></i>
+                <h2>locaton</h2>
+                <p>Kalmna,Nagpur -440026</p>
+            </div>
+            <div class="name">
+                <i class="fa-solid fa-phone"></i>
+                <h2>call me</h2>
+                <p>+91-9284935347</p>
+            </div>
+            <div class="name">
+                <i class="fa-solid fa-envelope"></i>
+                <h2>Email me</h2>
+                <p>pravinnandankar03@gmail.com</p>
+            </div>
+            
+        </div>
+
+    </div>
+    <script>
+        function openform() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            if(name == "" || name == null || email == null  ) {
+                alert("Enter fulll details !");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>

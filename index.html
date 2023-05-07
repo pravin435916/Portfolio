@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width = device-width , initial-scale = 1.0">
+
+    <title>Personal Portfolio Website</title>
+    <!----CSS link----->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    
+    <style>
+      body{
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        color: white;
+        
+      }
+      #visit{
+        color: rgb(228, 37, 68);
+      }
+      .dark-mode {
+              background: white;
+              color: black;
+            }
+            nav i{
+              outline: none;
+              font-size: 2.5rem;
+              color: rgb(228, 37, 68);
+              
+            }
+            button{
+              background: transparent;
+              outline: none;
+              border: none;
+            }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul id="x">
+                <li><a href="#" id="visit">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Resume.html">Resume</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <!-- <li><a href="#">Portfolio</a></li> -->
+                <li><a href="getintouch.html">Contact</a></li>
+            </ul>
+            <a href="#" class="btn">Buy Now</a>
+            <!-- <button onclick="myFunction()"><i class="fa-solid fa-star"></i></button> -->
+            <button onclick="myFunction()"><i class="fa-solid fa-star-and-crescent fa-flip"></i></button>
+            
+            
+          </nav>
+          <a href="#" class="icon" onclick="myfun()"> <i id="bar" class="fa-sharp fa-solid fa-bars"></i> </a>
+          <a href="#" class="icon" onclick="closefunc()"> <i id="bar2" class="fa-solid fa-xmark"></i> </a>
+        <div class="content">
+            <span class="title">Computer Science Engineeer</span>
+            <h1>Hello, I’m <span>Pravin</span></h1>
+            <p>I’m working as web Developer, visually sophisticated and technologically proficient, responsive and multi-functional React Template Imroz.</p>
+            <a href="#" class="btn">Download CV</a>
+        </div>
+        <div class="soc">
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/pravin.nandankar.18" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fab fa-linkedin"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fab fa-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      function myfun() {
+        var x = document.getElementById("x");
+        var y = document.getElementById("bar");
+        if(x.style.display == "block") {
+          x.style.display = "none";
+        }
+        else {
+          x.style.display = "block";
+        }
+        
+      }
+      function myFunction() {
+               var element = document.body;
+               element.classList.toggle("dark-mode"); 
+     //if we use this var.classlist.toggle("class name") and class will change according to changes
+            }
+    </script>
+<!--     
+    <div id="about" class="about">
+        <div class="card">
+            <div class="imgBx">
+              <img src="img1.jpeg">
+            </div>
+            <div class="ccontent">
+              <div class="details">
+                <h2>Pravin Nandankar<br/><span>Developer</span></h2>
+              </div>
+              <ul class="sci">
+                <li>
+                  <a href=""><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fab fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fab fa-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+    </div>
+
+    <div id="skills" class="container">
+        <div class="kard">
+          <div class="box">
+            <div class="kontent">
+              <h2>01</h2>
+              <h3>Adobe Premier</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar 
+                 non nunc dictum commodo. Curabitur non fermentum dolor. Sed ornare.</p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="kard">
+          <div class="box">
+            <div class="kontent">
+              <h2>02</h2>
+              <h3>Web Developement</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar 
+                 non nunc dictum commodo. Curabitur non fermentum dolor. Sed ornare.</p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="kard">
+          <div class="box">
+            <div class="kontent">
+              <h2>03</h2>
+              <h3>c,c++</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar 
+                 non nunc dictum commodo. Curabitur non fermentum dolor. Sed ornare.</p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+</body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <title>Resume</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: auto;
+            background-color: black;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            width: 100%;
+            padding: 10px;
+            margin: 10px;
+            color: white;
+            flex-wrap: wrap;
+        }
+        .container h1{
+            font-size: 2.8rem;
+            margin-left: 10px;
+        }
+        .container h2{
+            font-size: 2rem;
+        }
+        .container p{
+            font-size: 1.5rem;
+        }
+        .edu{
+            width: 45%;
+            border-left: 6px solid  #fd4766;
+            margin-left: 20px;
+        }
+        .exp{
+            width: 45%;
+            border-left: 6px solid  #fd4766;
+            margin-left: 20px;
+        }
+        @media  screen and (max-width:480px) {
+            .edu,.exp {
+                margin-left: 5px;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .container h1{
+                font-size: 1.5rem;
+            }
+            .container h2{
+                font-size: 1.2rem;
+            }
+            .container p{
+                font-size: 0.8rem;
+            }
+            .skills{
+                margin-left: 5px;
+            }
+        }
+        .head{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            padding: 20px;
+            margin: 20px;
+            color: white;
+        }
+        .head h1{
+            font-size: 2.9rem;
+            text-decoration: overline;
+            margin-top: 20px;
+        }
+        .head p{
+            font-size: 1.5rem;
+        }
+        .box{
+            padding: 15px;
+            margin: 15px;
+            gap: 10px;
+            border: 0.1px solid grey;
+        }
+        /* skiils */
+        /* progress nar */
+        .skills{
+            color: #f1f1f1;
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+            width: 80%;
+            grid-column-gap: 70px;
+            align-items: center;
+            /* text-align: center; */
+            justify-content: center;
+            position: relative;
+            left: 20px;
+            margin-left: 50px;
+        }
+        .progress-bar {
+            margin-top: 5px;
+       position: relative;
+       margin-bottom: 30px;
+       background-color: rgb(59, 58, 58);
+       border-radius: 8px;
+}
+
+.progress {
+  height: 20px;
+  /* background-color: #f1f1f1; */
+  border-radius: 5px;
+  color: white;
+}
+
+.progress-bar .progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 5px;
+  background-color: #fd4766;
+  animation: mymove 2s linear 1 ;
+}
+@keyframes mymove {
+  from {
+width: 1%;}
+  to {
+width: 75%;}
+}
+.skill {
+  padding: 2px;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+.h{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    margin: 10px;
+    padding: 15px;
+    font-size: 1.5rem;
+}
+
+    </style>
+</head>
+<body>
+    <div class="head">
+        <p>Check Out My Resume</p>
+        <h1>Resume</h1>
+    </div>
+    <div class="container">
+        <div class="edu">
+            <h1>Education</h1>
+            <div class="box">
+            <i class="fa-sharp fa-solid fa-arrow-right"></i>
+            <h2>11th</h2>
+            <p>Saraswati Vidya mandir , kalmana Nagpur</p>
+           </div>
+           <div class="box">
+            <i class="fa-sharp fa-solid fa-arrow-right"></i>
+            <h2>12th</h2>
+            <p>Mohoto Science college of science</p>
+           </div>
+           <div class="box">
+            <i class="fa-sharp fa-solid fa-arrow-right"></i>
+             <h2>B.Tech</h2>
+             <p>Shri Ramdeobaba college of engineering nagpur</p>
+           </div>
+        </div>
+        <div class="exp">
+            <h1>Experience</h1>
+           <div class="box">
+            <i class="fa-sharp fa-solid fa-arrow-right"></i>
+            <h2>Computer Science Engineer</h2>
+            <p>1st Year at institute</p>
+           </div>
+           <div class="box">
+            <i class="fa-sharp fa-solid fa-arrow-right"></i>
+            <h2>Web Developer</h2>
+            <p>Running </p>
+           </div>
+           <div class="box">
+            <i class="fa-sharp fa-solid fa-arrow-right"></i>
+            <h2>Competetive Programming</h2>
+            <p>Just Starting</p>
+        </div>
+    </div>
+</div>
+ <div class="h">
+<p>My Level of Knowledge in Some Tools</p>
+<h2>My Skills</h2>
+</div>
+    <div class="skills">
+    <div class="progress-bar">
+        <div class="progress" style="width: 85%"></div>
+        <span class="skill">Html</span>
+    </div>
+
+    <div class="progress-bar">
+        <div class="progress" style="width: 85%"></div>
+        <span class="skill">css</span>
+    </div>
+    
+    <div class="progress-bar">
+        <div class="progress" style="width: 80%"></div>
+        <span class="skill">Javascript</span>
+    </div>
+    
+    <div class="progress-bar">
+        <div class="progress" style="width: 70%"></div>
+        <span class="skill">Adobe Premier Pro</span>
+    </div>
+    
+    <div class="progress-bar">
+        <div class="progress" style="width: 80%"></div>
+        <span class="skill">C/C++</span>
+    </div>
+    
+    <div class="progress-bar">
+        <div class="progress" style="width: 50%"></div>
+        <span class="skill">UI/UX</span>
+    </div>
+</div>
+    
+    
+</body>
+</html>
