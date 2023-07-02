@@ -22,7 +22,10 @@ nav{
     padding: 30px 100px;
 }
 .logo{
-    max-height: 60px;
+    max-height: 100px;
+    border-radius: 50%;
+    mix-blend-mode: screen;
+    cursor: pointer;
 }
 nav ul li{
     list-style: none;
@@ -66,6 +69,15 @@ nav ul li a:hover:after{
     background: #fd4766;
     border: 2px solid #fd4766;
 }
+.btn>i{
+  font-size: 1rem;
+  margin: 5px;
+  color: white;
+}
+.btn>i:hover{
+  color: #fd4766;
+  
+}
 .btn:hover{
     background: transparent;
     border-color: #fd4766;
@@ -76,6 +88,11 @@ nav ul li a:hover:after{
     top: 35%;
     left: 8%;
 }
+#span{
+  cursor: pointer;
+  transition: 3s all linear;
+}
+
 .content .title{
     color: #1f1f25;
     font-size: 20px;
@@ -122,6 +139,18 @@ nav ul li a:hover:after{
   text-decoration: none;
   color: white;
 }
+.soc>ul>li>a>#facebook:hover{
+  color: #1c99fe;
+}
+.soc>ul>li>a>#github:hover{
+  color: rgb(217, 190, 154);
+}
+.soc>ul>li>a>#linkedin:hover{
+  color: rgb(93, 149, 229);
+}
+.soc>ul>li>a>#insta:hover{
+  color: #fd4766;
+}
 #bar{
   display: none;
   color: white;
@@ -135,6 +164,9 @@ nav ul li a:hover:after{
   font-size: 2.5rem;
 }
 @media screen and (max-width:480px){
+  #span{
+    font-size: 4rem;
+  }
   #bar{
     display: inline-block;
     position: relative;
@@ -152,14 +184,43 @@ nav ul li a:hover:after{
   ul{
     display: none;
     float: right;
+    z-index: 99;
+    background-color: #1f1f25;
     transition: all 3s ease-in-out;
   }
   .btn{
+    padding: 2px;
+    
+  }
+  #btn1{
+    /* padding: 5px; */
+    position: absolute;
     padding: 5px;
+    font-size: 0.8rem;
+    left: 2rem;
+    top: 8rem;
+    
   }
   .soc{
     display: block;
     float: right;
+  }
+  .logo{
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+    width: 4rem;
+  }
+  #dark{
+    position: absolute;
+    left: 10rem;
+    top: 3rem;
+
+  }
+  #bar{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
   }
   
 }
