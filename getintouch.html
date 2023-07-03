@@ -8,15 +8,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         body{
-            height: 100%;
-            width: auto;
             background-color: black;
         }
         *{
             padding: 0;
             margin: 0;
             box-sizing: border-box;
-            overflow: hidden;
         }
         .container{
             display: flex;
@@ -44,22 +41,37 @@
             width: 100%;
             justify-content: center;
         }
-        @media screen and (max-width:480px) {
+        @media screen and (max-width:768px) {
             .boxes{
                 display: flex;
                 flex-direction: column;
+                position: absolute;
+                top: 12rem;
             }
             .contact{
-                margin-left: 20px;
+                width: 100%;
+                position: relative;
+                left: 4rem;
+            }
+            .contact>.name{
+               padding: 10px;
             }
             #name,#email{
-                width: 100%;
+                width: 18rem;
             }
-            .head{
+            .contact>.head{
                 text-align: center;
+                padding: 10px;
+                width: 250px;
+                text-decoration: overline;
+                font-size: 1.5rem;
             }
             .form{
                 margin-left: 20px;
+                width: 100%;
+            }
+            .name>p{
+                width: 200px;
             }
         }
         .form{
@@ -136,13 +148,16 @@
             position: relative;
             left: 10px;
             font-size: 1.5rem;
+            font-family: "poppins";
+            padding: 10px;
         }
         #hd{
             color: white;
             font-size: 2rem;
             position: relative;
+            padding: 10px;
             left: 15px;
-            font-family: sans-serif;
+            font-family: "poppins";
         }
     </style>
 </head>
@@ -168,13 +183,13 @@
         </div>
             <div class="name">
                 <i class="fa-sharp fa-solid fa-circle-user"></i> 
-                    <h2>Name</h2>
+                    <h2>Name </h2>
                     <p>Pravin Nandankar</p>
             </div>
             <div class="name">
                 <i class="fa-solid fa-location-dot"></i>
                 <h2>locaton</h2>
-                <p>Kalmna,Nagpur -440026</p>
+                <p>Kalamana,Nagpur-440026</p>
             </div>
             <div class="name">
                 <i class="fa-solid fa-phone"></i>
