@@ -11,7 +11,6 @@
             padding: 0;
             margin: 0;
             box-sizing: border-box;
-            overflow: hidden;
         }
         body{
             background-color: black;
@@ -78,15 +77,29 @@
             letter-spacing: 0px;
             margin-bottom: 10px;
         }
-        @media screen and (max-width:480px){
+        @media screen and (max-width:768px){
             .container{
                 margin-left: 0px;
                 display: flex;
+                /* flex-direction: column; */
                 width: 100%;
             }
-           
-            .pic{
-                display: none;
+           .info{
+            position: absolute;
+            top: 10rem;
+            left: 1rem;
+            width: 12rem;
+           }
+            .pic>img{
+                position: absolute;
+                top: 15rem;
+                left: 10rem;
+                width: 14rem;
+                height: 18rem;
+                object-fit: contain;
+            }
+            .head>h1{
+                font-size: 3rem;
             }
             
         }
@@ -102,8 +115,8 @@
         <div class="container" >
             <div class="info">
              <p style="color: #fd4766;" id="I">Who am I ?</p>
-             <p id="main">I Am Pravin Nandankar studying at shri Ramdeobaba collge and engineering i am learning a web Developement </p> 
-             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores sed dolor tempora facilis adipisci qui, dicta perferendis explicabo aliquid neque.</p>
+             <p id="main">I Am Pravin Nandankar studying at shri Ramdeobaba collge and engineering and Currently working as a Front-End Developer </p> 
+             <p id="main"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores sed dolor tempora facilis adipisci qui, dicta perferendis explicabo aliquid neque.</p>
               <br> <hr>
               <p>Name : Pravin Nandankar </p> <span></span> <p>Email : pravinnandankar03@gmail.com</p>
               <button id="btn"> Download Cv </button>
