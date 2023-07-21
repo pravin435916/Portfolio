@@ -206,6 +206,7 @@ nav ul li a:hover:after{
     right: 6px;
     top: 250px;
     display: block;
+    background:none;
   }
   .logo{
     position: absolute;
