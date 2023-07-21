@@ -201,9 +201,11 @@ nav ul li a:hover:after{
     top: 8rem;
     
   }
-  .soc{
+   .soc>ul{
+    position: absolute;
+    right: 6px;
+    top: 250px;
     display: block;
-    float: right;
   }
   .logo{
     position: absolute;
